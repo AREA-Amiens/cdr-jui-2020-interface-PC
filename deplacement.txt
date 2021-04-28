@@ -1,0 +1,26 @@
+Av(avancer):+-valeur(distance):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):on/off(detection):(mis si action à effectuer )ac(choisir action):(t/d)valeur(+ si temps ou +-si distance)
+To(Tourner):+-angle(valeur):+-rayon(valeur):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):on/off(detection):(mis si action à effectuer )ac(choisir action):(t/d)valeur(+ si temps ou +-si angle)
+
+AvTo(AvancerTourner):+-valeur(distance):valeur(vitesse):valeur(acceleration):+-angle(valeur):+-rayon(valeur):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):on/off(detection):(mis si action à effectuer )ac(choisir action):(t/d/a)valeur(+ si temps ou +-si distance/angle)
+ToAv:+-angle(valeur):+-rayon(valeur):valeur(vitesse):valeur(acceleration):+-valeur(distance):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):on/off(detection):(mis si action à effectuer )ac(choisir action):(t/d/a)valeur(+ si temps ou +-si distance/angle)
+ToAv:+valeur(x coord):+valeur(y coord):valeur(vitesse):valeur(acceleration):c/n(abso):on/off(detection)
+
+ToAvTo:+-angle(valeur):+-rayon(valeur):valeur(vitesse):valeur(acceleration):+-valeur(distance):valeur(vitesse):valeur(acceleration):+-angle(valeur):+-rayon(valeur):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):on/off(detection):(mis si action à effectuer )ac(choisir action):(t/d/a/b)valeur(+ si temps ou +-si distance/angle(a si A1, b si A2))
+ToAvTo:+valeur(x coord):+valeur(y coord):+-angle(valeur):valeur(vitesse):valeur(acceleration):c/n(abso):on/off(detection)
+
+Re(recallage):+-valeur(distance mur):x/y(recallage selon quel axe):+valeur(nouvel emplacement):valeur(vitesse):valeur(acceleration):on/off(detection)
+
+Ti(tirette):+valeur(temps du match):+valeur(temps sortie drapeau):+valeur(temps retour base):+valeur(coordonné x):+valeur(coordonné y):valeur(vitesse):valeur(acceleration):c/n(corrigee ou non corrigee):+valeur(estimation des points)
+	#pas de gestion des obstacles temps du match en pourcentage pour la sortie du drapeau et le retour base 0% non pris en compte
+
+Br(bras):+valeur(de 0 à 4):h/b(haut/bas)ou0 1 2 3 4 5 pour la position de la gateline
+	#0 = getline ,1=bras G,2=arriere G,3=arriere D,4= bras D
+Ve(ventouse):valeur(de 0 à 6 pour devant et de 10(G)/20(D) pour arriere)
+
+#apres Br ou Ve possibilité de mettre ve ou br ou tr
+#temps suite a qqc en ms
+
+#en fin de ligne on met toujours un : et !
+
+
+Fi(fin)
